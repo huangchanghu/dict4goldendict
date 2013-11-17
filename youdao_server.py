@@ -1,3 +1,6 @@
+#!/usr/bin/python
+# -*- coding: utf8 -*-
+
 import web
 from pyquery import PyQuery as pyq
 import sys
@@ -32,7 +35,7 @@ class search:
         doc('#results-contents').css('width', '500px')
         doc('#results-contents').css('margin', '0')
         doc('#result_navigator').css('left', '550px')
-        web.header('Content-Type','text/html; charset=utf-8', unique=True)
+        web.header('Content-Type', 'text/html; charset=utf-8', unique=True)
         return doc.outerHtml()
 
 
