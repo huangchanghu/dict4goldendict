@@ -1,0 +1,2 @@
+dict4goldendict
+===============
