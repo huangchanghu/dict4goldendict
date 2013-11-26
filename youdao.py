@@ -27,7 +27,7 @@ def translate():
     for a in doc('a'):
         href = a.get('href')
         if href is not None and href.startswith('/'):
-            a.make_links_absolute()
+            a.make_links_absolute('http://dict.youdao.com')
 
     link = u"<a href='" + url + u"'>在浏览器中查看翻译</a>"
     doc('#results-contents').append(link)
