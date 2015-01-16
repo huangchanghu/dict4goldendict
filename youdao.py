@@ -21,7 +21,8 @@ def translate():
     doc('.error-wrapper').remove()
     doc('#topImgAd').remove()
     doc('#container').css('margin', '0')
-    doc('#results-contents').css('width', '510px')
+    doc('#results').css("margin-left", "20px")
+    doc('#results-contents').css('width', '480px')
     doc('#results-contents').css('margin', '0')
     doc('#result_navigator').css('left', '550px')
     for a in doc('a'):
