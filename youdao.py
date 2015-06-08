@@ -21,10 +21,13 @@ def translate():
     doc('.error-wrapper').remove()
     doc('#topImgAd').remove()
     doc('#container').css('margin', '0')
+    doc('#container').css('width', '500px')
     doc('#results').css("margin-left", "20px")
     doc('#results-contents').css('width', '480px')
     doc('#results-contents').css('margin', '0')
-    doc('#result_navigator').css('left', '550px')
+    doc('#result_navigator').css('left', '380px')
+    #result_navigator不能删掉，否则无法切换解释Tab
+    doc('#result_navigator').css('display', 'none')
     for a in doc('a'):
         href = a.get('href')
         if href is not None and href.startswith('/'):
